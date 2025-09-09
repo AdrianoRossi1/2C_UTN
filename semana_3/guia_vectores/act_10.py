@@ -1,5 +1,4 @@
 def buscar_numero(array, numero):
-    """Retorna la posición de la primera aparición del número o -1 si no se encuentra."""
     if numero in array:
         return array.index(numero)
     else:

@@ -4,5 +4,5 @@ numeros = 0
 for numeros in range(len(vec_numeros)):
     vec_numeros[numeros] = int(input("Ingrese un numero: "))
 
-print(f"Array original: {vec_numeros}")
-print("Array invertido:", vec_numeros[::-1])
+print(f"Numeros originales: {vec_numeros}")
+print("Numeros invertidos:", vec_numeros[::-1])

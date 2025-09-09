@@ -15,4 +15,4 @@ for i in range(5):
 if array_1 == array_2:
     print("Los arrays son iguales.")
 else:
-    print("Los arrays NO son iguales.")
+    print("Los arrays no son iguales.")
