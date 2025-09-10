@@ -5,8 +5,7 @@ def buscar_numero(array, numero):
     return -1                  
 
 numeros = [int(input(f"Ingrese el número {i+1}: ")) for i in range(10)]
+numero_a_buscar = int(input("Ingrese el número a buscar: "))
 
-num_a_buscar = int(input("Ingrese el número a buscar: "))
-
-posicion = buscar_numero(numeros, num_a_buscar)
+posicion = buscar_numero(numeros, numero_a_buscar)
 print(posicion) 
