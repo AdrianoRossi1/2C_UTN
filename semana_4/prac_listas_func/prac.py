@@ -31,7 +31,7 @@ def consultar_disponibilidad(titulos, ejemplares, cantidad_libros):
     print("Consultar disponibilidad")
     titulo = input("Ingrese el título: ")
     for i in range(cantidad_libros):
-        if titulos[i].lower() == titulo.lower():
+        if titulos[i] == titulo:
             print(f"{titulos[i]} tiene {ejemplares[i]} copias disponibles.")
             return
     print("El título no se encuentra en el catálogo.")
@@ -69,7 +69,7 @@ def actualizar_ejemplares(titulos, ejemplares, cantidad_libros):
     print("Actualizar ejemplares (préstamo / devolución)")
     titulo = input("Ingrese el título: ")
     for i in range(cantidad_libros):
-        if titulos[i].lower() == titulo.lower():
+        if titulos[i] == titulo:
             print(f"Ejemplares actuales: {ejemplares[i]}")
             cambio = int(input("Ingrese cantidad (+ para devolución, - para préstamo): "))
             ejemplares[i] += cambio
@@ -80,7 +80,7 @@ def actualizar_ejemplares(titulos, ejemplares, cantidad_libros):
     print("El título no se encuentra en el catálogo.")
 
 def menu():
-    cantidad_libros = 0  # ahora vive dentro del menú principal
+    cantidad_libros = 0 
 
     while True:
         print("Menu principal")
